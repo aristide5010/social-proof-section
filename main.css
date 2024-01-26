@@ -1,0 +1,234 @@
+:root {
+    --color-darkMagenta: hsl(300, 43%, 22%);
+    --color-softPink: hsl(333, 80%, 67%);
+    --color-lightGreyMagenta: hsl(300, 24%, 96%);
+    --color-darkGreyMagenta: hsl(303, 10%, 53%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, right bottom;
+    background-size: auto, 75.5%;
+    background-repeat: no-repeat, no-repeat;
+    display: grid;
+    place-items: center;
+
+    @media (max-width: 58.44em) {
+        background: #202020;
+    }
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: min(69.5em, 90%);
+    margin: 0 auto;
+    gap: 4.5em 0;
+    color: white;
+
+    @media (max-width: 58.44em) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        background: white;
+        margin: 0 8%;
+        width: auto;
+    }
+}
+
+.description {
+    text-align: left;
+    padding-top: 20px;
+    padding-right: 12%;
+    width: 50%;
+
+    @media (max-width: 58.44em) {
+        text-align: center;
+        padding-right: 0;
+        width: max(88%, 20em);
+    }
+}
+
+.description h1 { 
+    line-height: 0.85em;
+    font-size: 3.5em;
+    letter-spacing: -0.04em;
+    color: var(--color-darkMagenta);
+
+    @media (max-width: 58.44em) {
+        font-size: 2.5em;
+        padding: 65px 20px 0;
+    }
+}
+
+.description p {
+    margin-top: 6%;
+    line-height: 1.3em;
+    letter-spacing: -0.04em;
+    color: var(--color-darkGreyMagenta);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+
+
+
+.notations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    min-width: 50%;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 1.05em;
+    font-weight: 700;
+
+    @media (max-width: 58.44em) {
+        width: min(88%, 30em);
+        padding: 0;
+        margin-bottom: 3%;
+    }
+}
+#reviews {
+    align-self: start;
+
+    @media (max-width: 58.44em) {
+        align-self: center;
+    }
+}
+#reportGuru {
+    align-self: center;
+}
+#bestTech {
+    align-self: end;
+
+    @media (max-width: 58.44em) {
+        align-self: center;
+    }
+}
+
+#reviews, #reportGuru, #bestTech {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 82%;
+    color: var(--color-darkMagenta);
+    background: var(--color-lightGreyMagenta);
+    padding: 15px 24px;
+    border-radius: 8px;
+    list-style: none;
+    
+    @media (max-width: 70.625em) {
+        justify-content: center;
+        width: max(82%, 100%);
+    }
+}
+
+#stars {
+    margin-right: 20px;
+
+    @media (max-width: 58.44em) {
+       margin: 0 0 5px 0;
+    }
+}
+
+li img {
+    width: 17px;
+    height: 17px;
+    margin-left: 4px;
+}
+
+li p {
+    @media (max-width: 58.44em) {
+        margin-left: 20px;
+     }
+}
+
+
+
+
+.commentaires {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    letter-spacing: 0.02em;
+
+    @media (max-width: 58.44em) {
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 15px;
+    }
+}
+
+.carte01, .carte02, .carte03 {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    background: var(--color-darkMagenta);
+    padding: 2.375em 2em;
+
+    @media (max-width: 58.44em) {
+        width: min(30em, 88%);
+    }
+}
+.carte01 {
+    align-self: flex-start;
+}
+.carte02 {
+    margin: 1em 0;
+    align-self: center;
+
+    @media (max-width: 58.44em) {
+        margin: 0;
+    }
+}
+.carte03 {
+    align-self: flex-end;
+}
+
+.contenu-img {
+    width: 22%;
+}
+.carte01 img, .carte02 img, .carte03 img {
+    height: 40px;
+    border-radius: 50%; 
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 78%;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+h2 span {
+    color: var(--color-softPink);
+    font-weight: 400;
+}
+.carte01 p, .carte02 p, .carte03 p {
+    margin-top: 4.5%;
+    width: 100%;
+    line-height: 1.38em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+  }
+  .attribution a {
+    color: var(--color-darkMagenta);
+    text-decoration: none;
+  }
