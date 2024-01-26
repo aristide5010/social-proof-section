@@ -222,13 +222,3 @@ h2 span {
     width: 100%;
     line-height: 1.38em;
 }
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    color: black;
-  }
-  .attribution a {
-    color: var(--color-darkMagenta);
-    text-decoration: none;
-  }
